@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Pool Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="title">🎱 Simple Pool</div>
+    <div class="controls">
+      <button id="newGameBtn">New Game</button>
+      <button id="resetBtn">Reset Balls</button>
+      <button id="helpBtn">Help</button>
+      <label class="checkbox">
+        <input type="checkbox" id="soundToggle" checked />
+        Sound
+      </label>
+    </div>
+  </div>
+
+  <div class="hud">
+    <div>Shots: <span id="shots">0</span></div>
+    <div>Score: <span id="score">0</span></div>
+    <div>Status: <span id="status">Aim, click & drag to shoot</span></div>
+  </div>
+
+  <div class="canvas-wrap">
+    <canvas id="game" width="1000" height="550"></canvas>
+    <div id="powerBarWrap">
+      <div id="powerBar"></div>
+    </div>
+  </div>
+
+  <div id="helpModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeHelp" class="close">✕</button>
+      <h2>How to Play</h2>
+      <ul>
+        <li>Click and drag from the cue ball to aim and set power.</li>
+        <li>Release to shoot. Wait until all balls stop before the next shot.</li>
+        <li>Pot any ball = +100 points, scratch (cue ball in pocket) = −200 and ball-in-hand.</li>
+        <li>Press <b>Reset Balls</b> to re-rack. <b>New Game</b> resets score & shots.</li>
+        <li>Works with touch on phones/tablets.</li>
+      </ul>
+      <p>Tip: Use gentle shots. Overpowering makes it harder to control!</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
