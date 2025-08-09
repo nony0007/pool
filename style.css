@@ -22,7 +22,7 @@ button:hover{border-color:#3b82f6}
 
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;justify-content:center;align-items:center;padding:20px}
 .modal.hidden{display:none}
-.modal-content{background:#0f172a;border:1px solid #233266;border-radius:16px;max-width:640px;width:min(92vw,660px);padding:20px}
+.modal-content{position:relative;background:#0f172a;border:1px solid #233266;border-radius:16px;max-width:640px;width:min(92vw,660px);padding:20px}
 .modal h2{margin:0 0 10px}
 .close{position:absolute;right:18px;top:18px}
 
